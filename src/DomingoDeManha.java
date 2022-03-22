@@ -8,18 +8,17 @@ public class DomingoDeManha {
 
         while (true) {
             String[] relogio = leitor.nextLine().split(":");
-//            System.out.println(relogio[0]+relogio[1]);
             int hora = Integer.parseInt(relogio[0]);
             int min = Integer.parseInt(relogio[1]);
 
                 if (hora==7)
-                    System.out.println("Atraso maximo: " + min);
+                    System.out.printf("Atraso maximo: " + min+"\n");
                 if(hora==8)
-                    System.out.println("Atraso maximo: " + (60 + min));
+                    System.out.printf("Atraso maximo: " + (60 + min)+"\n");
                 if(hora==9)
-                    System.out.println("Atraso maximo: " + (120 + min));
+                    System.out.printf("Atraso maximo: " + (120 + min)+"\n");
                 else if (hora!=7 && hora!=8 && hora !=9)
-                    System.out.println("Atraso maximo: 0");
+                    System.out.printf("Atraso maximo: 0"+"\n");
 
         }
 
